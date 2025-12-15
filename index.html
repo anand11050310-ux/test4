@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mongolian Traditional Deel & Ger</title>
+<style>
+/* Global */
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #ffffff, #ececec);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.8;
+    color: #222;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #7a0000, #c40000);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+header h1 { font-size: 42px; letter-spacing: 1px; }
+.subtitle { font-size: 20px; opacity: 0.95; }
+.flag-left { width: 60px; position: absolute; top: 50%; left: 25px; transform: translateY(-50%); }
+
+/* Gallery */
+.gallery { display: flex; justify-content: center; gap: 25px; margin: 40px; flex-wrap: wrap; }
+.gallery img { width: 310px; border-radius: 14px; box-shadow: 0 12px 25px rgba(0,0,0,0.35); transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.gallery img:hover { transform: translateY(-10px) scale(1.06); box-shadow: 0 18px 40px rgba(139,0,0,0.6); }
+
+/* Content */
+.content { background: linear-gradient(180deg, #ffffff, #f9f9f9); width: 90%; max-width: 900px; margin: 30px auto; padding: 35px 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, background 0.5s, color 0.5s; }
+.content:hover { transform: translateY(-5px); }
+.content h2 { color: #7a0000; font-size: 30px; }
+.content h3 { color: #b30000; margin-top: 25px; }
+.content ul { margin-left: 20px; font-size: 18px; }
+.section-image { width: 100%; border-radius: 10px; margin-bottom: 20px; }
+
+/* Footer */
+footer { background: linear-gradient(135deg, #7a0000, #b30000); color: white; text-align: center; padding: 18px; font-size: 18px; letter-spacing: 1px; transition: background 0.5s, color 0.5s; }
+
+/* Credit */
+.credit { position: fixed; bottom: 12px; right: 12px; font-size: 14px; color: #444; opacity: 0.85; }
+
+/* Animations */
+.fade-up { animation: fadeUp 1.2s ease both; }
+.fade-down { animation: fadeDown 1.2s ease both; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeDown { from { opacity:0; transform:translateY(-40px);} to {opacity:1; transform:translateY(0);} }
+
+/* Dark Mode */
+body.dark-mode { background: #111; color: #eee; }
+body.dark-mode header { background: linear-gradient(135deg, #330000, #660000); }
+body.dark-mode .content { background: #222; color: #eee; }
+body.dark-mode footer { background: linear-gradient(135deg, #330000, #660000); color: #eee; }
+
+/* Dark Mode Button */
+#darkToggle { position: fixed; bottom: 20px; right: 20px; background: #7a0000; color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.3); z-index: 100; transition: 0.3s ease; }
+#darkToggle:hover { background: #c40000; }
+</style>
+</head>
+<body>
+
+<button id="darkToggle">Toggle Dark Mode</button>
+
+<header>
+<img class="flag-left" src="images/mongolia-flag.png" alt="Mongolian Flag">
+<h1>Mongolian Traditional Deel & Ger</h1>
+<p class="subtitle">A Modern Cultural Page</p>
+</header>
+
+<section class="gallery">
+<img src="images/deel1.jpg" alt="Deel 1">
+<a href="https://www.olympics.com/ioc/mongolia" target="_blank"><img src="images/deel2.jpg" alt="Mongolia Olympics"></a>
+<img src="images/deel3.jpg" alt="Deel 3">
+</section>
+
+<section class="content fade-up">
+<h2>About the Mongolian Deel (English)</h2>
+<p>The <strong>Deel</strong> is a traditional Mongolian robe worn by nomads for centuries. It is made from silk, wool, cotton, or brocade, and is designed to protect the wearer in Mongolia’s harsh climate. The Deel remains a symbol of cultural identity, heritage, and pride.</p>
+<h3>Types of Deel</h3>
+<ul>
+<li><strong>Khalkha Deel</strong> – simple, practical, most common</li>
+<li><strong>Buryat Deel</strong> – wide sleeves and unique collar</li>
+<li><strong>Kazakh Shapan</strong> – decorative and embroidered</li>
+<li><strong>Inner Mongolian Deel</strong> – colorful and fitted</li>
+</ul>
+</section>
+
+<section class="content fade-down">
+<h2>Монгол дээл</h2>
+<p><strong>Дээл</strong> нь Монгол орны уламжлалт хувцас бөгөөд олон зуун жилийн турш нүүдэлчин ард түмний өмсөж ирсэн өв соёлын нэг юм. Монголын эрс тэс уур амьсгалд тохирсон бүтэц, хийцтэй энэ хувцас өнөөг хүртэл үнэ цэнээ алдаагүй билээ.</p>
+<h3>Дээлийн төрлүүд</h3>
+<ul>
+<li><strong>Халх дээл</strong> – өргөн хэрэглэгддэг, энгийн загвартай</li>
+<li><strong>Буриад дээл</strong> – онцгой зах, өргөн ханцуйтай</li>
+<li><strong>Казах шапан</strong> – гоёлын хатгамалтай</li>
+<li><strong>Өвөр Монгол дээл</strong> – тод өнгөтэй, бариу загвартай</li>
+</ul>
+</section>
+
+<section class="content fade-up">
+<img class="section-image" src="images/mongol-ger.jpg" alt="Mongol Ger">
+<h2>About the Mongol Ger (English)</h2>
+<p>The <strong>Ger</strong> (yurt) is a traditional Mongolian dwelling used by nomads. Made of wood and felt, it is mobile, comfortable, and withstands Mongolia's harsh weather. The Ger is a symbol of harmony between humans and nature in Mongolian culture.</p>
+</section>
+
+<section class="content fade-down">
+<h2>Монгол гэр</h2>
+<p><strong>Гэр</strong> нь Монголчуудын уламжлалт орон сууц бөгөөд нүүдэлчин амьдралд зориулагдсан. Мод, ноосоор хийгдсэн, хөдөлгөөнт, ая тухтай, Монголын эрс тэс уур амьсгалд тэсвэртэй. Монгол гэр нь байгальтай уялдаатай амьдралын бэлгэ тэмдэг юм.</p>
+</section>
+
+<footer>© 2025 Mongolian Culture Website</footer>
+
+<script>
+const toggle = document.getElementById('darkToggle');
+toggle.addEventListener('click', () => { document.body.classList.toggle('dark-mode'); });
+</script>
+
+</body>
+</html>
